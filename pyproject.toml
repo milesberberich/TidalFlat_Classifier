@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tidalflat_classifier"
+version = "0.1.0"
+description = "A classification tool to detect tidal flats"
+dependencies = [
+    "earthengine-api",
+    "geopandas",
+    "shapely",
+    "requests"]
