@@ -1,5 +1,8 @@
 # TidalFlat_Classifier
 
-A python function that enables you to use a pretrained Random Forest classifier to *detect tidal flats*.
+## Purpose
 
-You need to be logged into the Google-Earth-Engine-API.
+**Enables you to detect tidal flat with just two functions!**
+
+A easy package that enables you to implement the approach of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8) using the _Google-Earth-Engine API_ in Python!
+A pretrained Classifier will be used --> no need to collect training data or train a model.
