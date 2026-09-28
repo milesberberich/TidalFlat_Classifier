@@ -14,7 +14,7 @@ The package itself consists of two functions:
 - **run_classifier.py:** After specific the _area of interest (aoi)_ and the start and end year_ of the analysis, it performs the classification.
 - **example_script.py**: Shows a simple example workflow.
 
-## Requierments
+## Requirements
 
 - GEE-acount
 
