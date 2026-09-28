@@ -55,12 +55,12 @@ The classification will be saved like:
 1 = "Water"\
 2 = "Tidal Flat"
 
-The classification has a spatial resolution of 30cm and a temporal resolution of three years. 
+The classification has a spatial resolution of 3m and a temporal resolution of three years. 
 
 ## Methodology
 
 The classification uses an approach based on [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8).\
-Landsat-data is used to dervive indices and statistics.\
+Landsat-data is used to derive indices and statistics. 
 Auxillary data like `NOAA/NGDC/ETOPO1'` and `JRC/GSW1_4/GlobalSurfaceWater` is used as well and  
 The RandomForest-Classifier was trained using the training data of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8).
 Overall Accuracy is 93%. The model was trained using the [code originally used in the paper](https://github.com/nick-murray/global-tidalFlat).

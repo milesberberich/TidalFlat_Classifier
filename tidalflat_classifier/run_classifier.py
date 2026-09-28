@@ -6,14 +6,18 @@ import ee
 from shapely.geometry import mapping
 
 
-def run_classifier(path_to_aoi: str, start_year: str, end_year: str, classifier: ee.Classifier):
+def run_classifier(path_to_aoi: str, start_year: str, end_year: str, classifier: ee.Classifier) -> ee.Image:
 
     '''The funtion calls the pretrained RandomForest-Classifier and applies it in the defined area-of-interest from start_year to end_year.
     path_to_aoi: needs to point to a geojson or shapefile
     start_year: e.g. 2016
     end_year: e.g. 2019
 
-    To run the function, you need to be logged into Google-Earth-Engine'''
+    The year need to create a 3-year intervall.
+
+    To run the function, you need to be logged into Google-Earth-Engine.
+    The function outputs an ee.Image, which can be used for further processing or downloaded as shown in the example script.
+    '''
 
 
 

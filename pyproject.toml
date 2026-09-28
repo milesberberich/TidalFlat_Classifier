@@ -6,8 +6,30 @@ build-backend = "setuptools.build_meta"
 name = "tidalflat_classifier"
 version = "0.1.0"
 description = "A classification tool to detect tidal flats"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Miles Berberich", email = "milesberberich@gmail.com"},
+]
+requires-python = ">=3.13"
+keywords = ["tidal flats", "classification", "google earth engine", "remote sensing", "landsat"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: GIS",
+]
 dependencies = [
     "earthengine-api",
     "geopandas",
     "shapely",
-    "requests"]
+    "requests",
+]
+
+[project.urls]
+Homepage = "https://github.com/milesberberich/TidalFlat_Classifier"
+Repository = "https://github.com/milesberberich/TidalFlat_Classifier"
+Issues = "https://github.com/milesberberich/TidalFlat_Classifier/issues"

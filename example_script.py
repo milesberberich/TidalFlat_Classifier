@@ -5,6 +5,7 @@ ee.Authenticate()
 ee.Initialize(project="lstcalculation")
 
 # ------ 2. Install
+
 from tidalflat_classifier.download_classifier import *
 from tidalflat_classifier.run_classifier import *
 

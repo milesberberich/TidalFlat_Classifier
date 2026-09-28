@@ -1,7 +1,8 @@
 import requests
 import ee
 
-def download_classifier():
+def download_classifier() -> ee.Classifier:
+    ''''This function downloads the classifier from Github for further usage. It needs no input. It outputs the ee.Classifier used in run_classifier().'''
 
     def __init__(self):
         self._cl
