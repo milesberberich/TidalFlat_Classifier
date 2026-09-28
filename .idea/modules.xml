@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TidalFlat_Classifier.iml" filepath="$PROJECT_DIR$/.idea/TidalFlat_Classifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tidalflat_classifier.iml" filepath="$PROJECT_DIR$/.idea/tidalflat_classifier.iml" />
     </modules>
   </component>
 </project>
