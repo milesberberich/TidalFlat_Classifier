@@ -16,7 +16,9 @@ The package itself consists of two functions:
 
 ## Requirements
 
-- GEE-acount
+- Google Earth Engine account
+- Google Cloud project ID (for GEE authentification)
+- Python >= 3.13
 
 ## Installation & Setup
 
