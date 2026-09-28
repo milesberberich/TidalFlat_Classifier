@@ -57,6 +57,7 @@ The classification will be saved like:
 
 The classification has a spatial resolution of 3m and a temporal resolution of three years. 
 
+**Reminder:** Depending on the software used to visualize the result, the class "Other" (0) might be set as a NoData-Value. 
 ## Methodology
 
 The classification uses an approach based on [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8).\
