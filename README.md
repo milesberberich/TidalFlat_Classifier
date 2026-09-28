@@ -57,7 +57,7 @@ The classification will be saved like:
 1 = "Water"\
 2 = "Tidal Flat"
 
-The classification has a spatial resolution of 3m and a temporal resolution of three years. 
+The classification has a spatial resolution of 3m and a temporal resolution of three years. It uses EPSG:4326.
 
 **Reminder:** Depending on the software used to visualize the result, the class "Other" (0) might be set as a NoData-Value. 
 ## Methodology
