@@ -74,5 +74,15 @@ Tidal Flat Precision = 96.97%\
 Tidal Flat Recall = 96.97%\
 Tidal Flat F1-Score = 92.48%
 
+## Scope
+
+Purpose of this Package is to provide an easy-to-use tool for conservationist to:
+
+- locate current tidal flat habitats
+- quantify habitat loss over time
+- identify hotspots for conservation
+
+All of that can be done without training data, computational ressources or extensive programming knowledge. 
+
 
 
