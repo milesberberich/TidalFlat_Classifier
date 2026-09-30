@@ -2,31 +2,33 @@
 
 ## Purpose
 
-**Enables you to detect tidal flat with just two functions!**
+**Enables you to detect tidal flats with just two functions!**
 
-An easy package that enables you to implement the approach of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8) using the _Google-Earth-Engine API_ in Python!\
+An user-friendly package that enables you to implement the approach of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8) using the _Google-Earth-Engine API_ in Python!\
 A pretrained Classifier will be used &rarr; no need to collect training data / train a model.
 
 ## Contents
 
 The package itself consists of two functions:
 - **download_classifier.py:** Downloads a trained Random Forest into your system.
-- **run_classifier.py:** After specific the _area of interest (aoi)_ and the start and end year_ of the analysis, it performs the classification.
+- **run_classifier.py:** After specifying the _area of interest (aoi)_ and the _start and end year_ of the analysis, it performs the classification.
 - **example_script.py**: Shows a simple example workflow.
 
 ## Requirements
 
 - Google Earth Engine account
-- Google Cloud project ID (for GEE authentification)
+- Google Cloud project ID (for GEE authentication)
 - Python >= 3.13
 
 ## Installation & Setup
 
 The package can be installed using:\
 
-```pip install git+https://github.com/milesberberich/TidalFlat_Classifier.git```
+```!pip install git+https://github.com/milesberberich/TidalFlat_Classifier.git
+from tidalflats_classifier import download_classifier, run_classifier
+```
 
-To be able to use the Google-Earth-Engine, run:
+To use the Google-Earth-Engine, run:
 ```
 import ee
 ee.Authenticate()
@@ -35,7 +37,7 @@ ee.Initialize(project="your_example_project")
 
 ## Example
 
-After installation and authentification of GEE, thats the only code required to run the model and download the results.
+After installation and authentication of GEE, this is the only code required to run the model and download the results.
 
 ```
 classifier = download_classifier()
@@ -46,43 +48,44 @@ url = result.getDownloadURL({'scale': 30,'fileFormat': 'GeoTIFF'})
 print(url)
 ```
 The classification can then be downloaded using the link given by the code.\
-The `start_year` and `end_year` needs to be a three-year intervall.
+The `start_year` and `end_year` needs to span a three-year interval.
 
 ## Output
 
-Using the link you download a .tiff file with the classification.\
+Using the link provided by the script, you can download a .tiff file with the classification.\
 The classification will be saved like:
 
 0 = "Other" (mostly land and vegetated areas)\
 1 = "Water"\
 2 = "Tidal Flat"
 
-The classification has a spatial resolution of 3m and a temporal resolution of three years. It uses EPSG:4326.
+The classification has a spatial resolution of 30m and a temporal resolution of three years. It uses EPSG:4326.
 
 **Reminder:** Depending on the software used to visualize the result, the class "Other" (0) might be set as a NoData-Value. 
 ## Methodology
 
-The classification uses an approach based on [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8).\
+The classification uses an approach based on [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8).
+The full workflow used to train the model is documented in https://github.com/GebTorte/WWFTidalFlats.
 
-Most of the 56-parameters are indices and metrics derived from landsat data. Furhtermore auxillary data like `NOAA/NGDC/ETOPO1'` and `JRC/GSW1_4/GlobalSurfaceWater` was used.
+Most of the 56 parameters are indices and metrics derived from Landsat data. Futhermore auxiliary data like `NOAA/NGDC/ETOPO1'` and `JRC/GSW1_4/GlobalSurfaceWater` was used.
 The RandomForest-Classifier was trained using the training data of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8).
 The model was trained using the [code originally used in the paper](https://github.com/nick-murray/global-tidalFlat).
 
 ### Accuracy 
 Overall Accuracy = 95%\
-Tidal Flat Precision = 96.97%\
+Tidal Flat Precision = 88,40%\
 Tidal Flat Recall = 96.97%\
 Tidal Flat F1-Score = 92.48%
 
 ## Scope
 
-Purpose of this Package is to provide an easy-to-use tool for conservationist to:
+The purpose of this Package is to provide an easy-to-use tool for conservationist to:
 
 - locate current tidal flat habitats
 - quantify habitat loss over time
 - identify hotspots for conservation
 
-All of that can be done without training data, computational ressources or extensive programming knowledge. 
+All of that can be done without training data, computational resources or extensive programming knowledge. 
 
 
 
