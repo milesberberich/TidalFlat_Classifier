@@ -1,5 +1,5 @@
 
-<img src="migratory_bird" align="right" width="150" alt="Tidal Flats Classifier Logo or Demo">
+<img src="migratory_bird" align="right" width="250" alt="Tidal Flats Classifier Logo or Demo">
 
 # TidalFlats_Classifier
 ## Purpose
