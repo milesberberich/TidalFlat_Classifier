@@ -5,7 +5,8 @@
 **Enables you to detect tidal flats with just two functions!**
 
 An user-friendly package that enables you to implement the approach of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8) using the _Google-Earth-Engine API_ in Python!\
-A pretrained Classifier will be used &rarr; no need to collect training data / train a model.
+A pretrained Classifier will be used &rarr; no need to collect training data / train a model.\
+Meant to support conservation of migratory birds which rely on tidal flats as resting places.
 
 ## Contents
 
@@ -87,7 +88,12 @@ The purpose of this Package is to provide an easy-to-use tool for conservationis
 - quantify habitat loss over time
 - identify hotspots for conservation
 
-All of that can be done without training data, computational resources or extensive programming knowledge. 
+All of that can be done without training data, computational resources or extensive programming knowledge.\
+It can be part of a larger GEE workflow or just used as a standalone tool.\
+The model was created as a joined effort by Rosemary Jones, Simon Sacher, Jule Pfeiffer and Miles Berberich: https://github.com/GebTorte/WWFTidalFlats\
+It was created as part of the class "EO in ecology" supervised by Dr. Wegmann for the WWF.
+
+
 
 
 
