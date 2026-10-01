@@ -10,7 +10,7 @@
 **Enables you to detect tidal flats with just two functions!**
 
 
-An user-friendly package that enables you to implement the approach of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8) using the _Google-Earth-Engine API_ in Python!\
+A user-friendly package that enables you to implement the approach of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8) using the _Google-Earth-Engine API_ in Python!\
 
 A pretrained Classifier will be used &rarr; no need to collect training data / train a model.\
 
@@ -21,7 +21,7 @@ A pretrained Classifier will be used &rarr; no need to collect training data / t
 ## Contents
 
 
-The package itself consists of two functions:
+The package contains of **two functions**, **one example script** and **the classifier itself**:
 
 - **download_classifier.py:** Downloads a trained Random Forest into your system.
 
@@ -121,9 +121,9 @@ The classification uses an approach based on [Murray et al. 2018](https://www.na
 The full workflow used to train the model is documented in https://github.com/GebTorte/WWFTidalFlats.
 
 
-Most of the 56 parameters are indices and metrics derived from Landsat data. Furthermore auxiliary data like `NOAA/NGDC/ETOPO1'` and `JRC/GSW1_4/GlobalSurfaceWater` were used.
+Most of the 56 parameters are indices and metrics derived from Landsat data. Furthermore auxiliary data like `NOAA/NGDC/ETOPO1` and `JRC/GSW1_4/GlobalSurfaceWater` were used.
 
-The RandomForest-Classifier was trained using the training data of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8).
+The Random Forest-Classifier was trained using the training data of [Murray et al. 2018](https://www.nature.com/articles/s41586-018-0805-8).
 
 The model was trained using the [code originally used in the paper](https://github.com/nick-murray/global-tidalFlat).
 
