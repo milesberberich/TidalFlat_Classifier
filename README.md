@@ -130,13 +130,13 @@ The model was trained using the [code originally used in the paper](https://gith
 
 ### Accuracy 
 
-Overall Accuracy = 95%\
+Overall Accuracy = 95%
 
-Tidal Flat Precision = 88,40%\
+Tidal Flat Precision = 88,40%
 
-Tidal Flat Recall = 96.97%\
+Tidal Flat Recall = 96.97%
 
-Tidal Flat F1-Score = 92.48%\
+Tidal Flat F1-Score = 92.48%
 
 
 The classifier is highly reliable and performs well. However, the model occasionally overpredicts tidal flats.
