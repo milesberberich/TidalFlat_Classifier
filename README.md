@@ -103,7 +103,7 @@ The classification will be saved like:
 
 0 = "Other" (mostly land and vegetated areas)\
 
-1 = "Water"\
+1 = "Water"
 
 2 = "Tidal Flat"
 
