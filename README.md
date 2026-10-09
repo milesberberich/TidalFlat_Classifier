@@ -50,7 +50,7 @@ The package can be installed using:\
 
 !pip install git+https://github.com/milesberberich/TidalFlat_Classifier.git
 
-from tidalflats_classifier import download_classifier, run_classifier
+from tidalflat_classifier import download_classifier, run_classifier
 
 ```
 
